@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#
+# Script borrowed from https://raw.githubusercontent.com/cra0zy/code-nautilus/master/install.sh
+# and enhanced to also install intellij
+#
+
 # Install python-nautilus
 echo "Installing python-nautilus..."
 if type "pacman" > /dev/null 2>&1
