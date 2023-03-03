@@ -51,8 +51,8 @@ rm -f ~/.local/share/nautilus-python/extensions/intellij-nautilus.py
 
 # Download and install the extension
 echo "Downloading newest version..."
-wget --show-progress -q -O ~/.local/share/nautilus-python/extensions/code-nautilus.py https://raw.githubusercontent.com/pmbsa/ubuntu/master/nautilus/code-nautilus.py
-wget --show-progress -q -O ~/.local/share/nautilus-python/extensions/intellij-nautilus.py https://raw.githubusercontent.com/pmbsa/ubuntu/master/nautilus/intellij-nautilus.py
+wget --show-progress -q -O ~/.local/share/nautilus-python/extensions/code-nautilus.py https://raw.githubusercontent.com/pmbsa/ubuntu/main/nautilus/code-nautilus.py
+wget --show-progress -q -O ~/.local/share/nautilus-python/extensions/intellij-nautilus.py https://raw.githubusercontent.com/pmbsa/ubuntu/main/nautilus/intellij-nautilus.py
 
 # Restart nautilus
 echo "Restarting nautilus..."
