@@ -10,7 +10,7 @@ from subprocess import call
 import os
 
 # path to MPS
-MPS = '/home/icon0078/mps/bin/mps.sh'
+MPS = 'run_scaled /home/icon0078/mps/bin/mps.sh'
 
 # what name do you want to see in the context menu?
 MPSNAME = 'MPS'
