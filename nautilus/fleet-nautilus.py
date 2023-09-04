@@ -9,8 +9,8 @@ from gi.repository import Nautilus, GObject
 from subprocess import call
 import os
 
-# path to intellij
-FLEET = 'jetbrains-fleet'
+# path to fleet
+FLEET = '/home/icon0078/.local/share/JetBrains/Toolbox/apps/fleet/bin/Fleet'
 
 # what name do you want to see in the context menu?
 FLEETNAME = 'Fleet'
