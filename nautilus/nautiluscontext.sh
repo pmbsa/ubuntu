@@ -53,12 +53,14 @@ echo "Removing previous version (if found)..."
 mkdir -p ~/.local/share/nautilus-python/extensions
 rm -f ~/.local/share/nautilus-python/extensions/code-nautilus.py
 rm -f ~/.local/share/nautilus-python/extensions/intellij-nautilus.py
+rm -f ~/.local/share/nautilus-python/extensions/fleet-nautilus.py
 rm -f ~/.local/share/nautilus-python/extensions/mps-nautilus.py
 
 # Download and install the extension
 echo "Downloading newest version..."
 wget --show-progress -q -O ~/.local/share/nautilus-python/extensions/code-nautilus.py https://raw.githubusercontent.com/pmbsa/ubuntu/main/nautilus/code-nautilus.py
 wget --show-progress -q -O ~/.local/share/nautilus-python/extensions/intellij-nautilus.py https://raw.githubusercontent.com/pmbsa/ubuntu/main/nautilus/intellij-nautilus.py
+wget --show-progress -q -O ~/.local/share/nautilus-python/extensions/fleet-nautilus.py https://raw.githubusercontent.com/pmbsa/ubuntu/main/nautilus/fleet-nautilus.py
 wget --show-progress -q -O ~/.local/share/nautilus-python/extensions/mps-nautilus.py https://raw.githubusercontent.com/pmbsa/ubuntu/main/nautilus/mps-nautilus.py
 
 # Restart nautilus
