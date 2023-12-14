@@ -21,7 +21,7 @@ NEWWINDOW = False
 
 class FleetExtension(GObject.GObject, Nautilus.MenuProvider):
 
-    def launch_vscode(self, menu, files):
+    def launch_fleet(self, menu, files):
         safepaths = ''
         args = ''
 
@@ -46,7 +46,7 @@ class FleetExtension(GObject.GObject, Nautilus.MenuProvider):
             label='Open in ' + FLEETNAME,
             tip='Opens the selected files with Fleet'
         )
-        item.connect('activate', self.launch_vscode, files)
+        item.connect('activate', self.launch_fleet, files)
 
         return [item]
 
@@ -57,6 +57,6 @@ class FleetExtension(GObject.GObject, Nautilus.MenuProvider):
             label='Open in ' + FLEETNAME,
             tip='Opens the current directory in Fleet'
         )
-        item.connect('activate', self.launch_vscode, [file_])
+        item.connect('activate', self.launch_fleet, [file_])
 
         return [item]

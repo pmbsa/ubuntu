@@ -21,7 +21,7 @@ NEWWINDOW = False
 
 class IntelliJExtension(GObject.GObject, Nautilus.MenuProvider):
 
-    def launch_vscode(self, menu, files):
+    def launch_intellij(self, menu, files):
         safepaths = ''
         args = ''
 
@@ -46,7 +46,7 @@ class IntelliJExtension(GObject.GObject, Nautilus.MenuProvider):
             label='Open in ' + INTELLIJNAME,
             tip='Opens the selected files with IntelliJ'
         )
-        item.connect('activate', self.launch_vscode, files)
+        item.connect('activate', self.launch_intellij, files)
 
         return [item]
 
@@ -57,6 +57,6 @@ class IntelliJExtension(GObject.GObject, Nautilus.MenuProvider):
             label='Open in ' + INTELLIJNAME,
             tip='Opens the current directory in IntelliJ'
         )
-        item.connect('activate', self.launch_vscode, [file_])
+        item.connect('activate', self.launch_intellij, [file_])
 
         return [item]

@@ -21,7 +21,7 @@ NEWWINDOW = False
 
 class MPSExtension(GObject.GObject, Nautilus.MenuProvider):
 
-    def launch_vscode(self, menu, files):
+    def launch_mps(self, menu, files):
         safepaths = ''
         args = ''
 
@@ -46,7 +46,7 @@ class MPSExtension(GObject.GObject, Nautilus.MenuProvider):
             label='Open in ' + MPSNAME,
             tip='Opens the selected files with MPS'
         )
-        item.connect('activate', self.launch_vscode, files)
+        item.connect('activate', self.launch_mps, files)
 
         return [item]
 
@@ -57,6 +57,6 @@ class MPSExtension(GObject.GObject, Nautilus.MenuProvider):
             label='Open in ' + MPSNAME,
             tip='Opens the current directory in MPS'
         )
-        item.connect('activate', self.launch_vscode, [file_])
+        item.connect('activate', self.launch_mps, [file_])
 
         return [item]
