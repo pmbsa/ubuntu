@@ -54,7 +54,7 @@ mkdir -p ~/.local/share/nautilus-python/extensions
 rm -f ~/.local/share/nautilus-python/extensions/code-nautilus.py
 rm -f ~/.local/share/nautilus-python/extensions/intellij-nautilus.py
 rm -f ~/.local/share/nautilus-python/extensions/fleet-nautilus.py
-rm -f ~/.local/share/nautilus-python/extensions/mps-nautilus.py
+rm -f rm -f ~/.local/share/nautilus-python/extensions/mps-nautilus.py
 
 # Download and install the extension
 echo "Downloading newest version..."

@@ -10,7 +10,7 @@ from subprocess import call
 import os
 
 # path to intellij
-INTELLIJ = 'intellij-idea-community'
+INTELLIJ = '/home/icon0078/.local/share/JetBrains/Toolbox/apps/intellij-idea-community-edition/bin/idea.sh'
 
 # what name do you want to see in the context menu?
 INTELLIJNAME = 'IntelliJ'
